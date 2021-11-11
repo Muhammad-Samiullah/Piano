@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>ChordChord: Music Maker</title>
+  </head>
+  <body>
+    <div id="__next">
+      <audio
+        src="data:audio/mp3;base64,//MkxAAHiAICWABElBeKPL/RANb2w+yiT1g/gTok//lP/W/l3h8QO/OCdCqCW2Cw//MkxAQHkAIWUAhEmAQXWUOFW2dxPu//9mr60ElY5sseQ+xxesmHKtZr7bsqqX2L//MkxAgFwAYiQAhEAC2hq22d3///9FTV6tA36JdgBJoOGgc+7qvqej5Zu7/7uI9l//MkxBQHAAYi8AhEAO193vt9KGOq+6qcT7hhfN5FTInmwk8RkqKImTM55pRQHQSq//MkxBsGkgoIAABHhTACIJLf99nVI///yuW1uBqWfEu7CgNPWGpUadBmZ////4sL//MkxCMHMAH9iABEmAsKioqKigsLCwtVTEFNRTMuOTkuNVVVVVVVVVVVVVVVVVVV//MkxCkECAUYCAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV"
+        preload="auto"
+        title="ChordChord"
+      ></audio>
+      <audio src="./audio/audio-track.mp3" id="audio-track"></audio>
+      <header style="margin-top: 0">
+        <div class="header-logo"><a href="/">ChordChord</a></div>
+        <i class="header-toggle icon-bars" onclick="showNav()"></i>
+        <div class="header-menu-items">
+          <div class="header-menu-item selected"><a href="">Generator</a></div>
+          <div class="header-menu-item"><a href="">Pricing</a></div>
+          <div class="header-menu-item"><a href="">Blog</a></div>
+          <button class="header-sign-in-button">Sign In</button>
+        </div>
+      </header>
+      <div class="header-menu">
+        <div class="menu-item selected"><a href="">Generator</a></div>
+        <div class="menu-item"><a href="">Pricing</a></div>
+        <div class="menu-item"><a href="">Blog</a></div>
+        <center><button class="header-sign-in-button">Sign In</button></center>
+      </div>
+      <div class="generator-mobile-padding-block">
+        <div class="generator-centered-block top-24-12">
+          <div
+            class="
+              sweet-round-button
+              purple
+              generator-instrument-settings-button
+              medium
+            "
+          >
+            <i class="icon-music icon"></i>
+            <div class="name">Instrument Settings</div>
+          </div>
+        </div>
+        <div class="piano-container">
+          <div
+            class="piano-key piano-natural"
+            style="width: 6.428571428571429%; left: 0%"
+          ></div>
+          <div
+            class="piano-key piano-accidental"
+            style="width: 5%; left: 4.285714285714286%"
+          ></div>
+          <div
+            class="piano-key piano-natural"
+            style="width: 6.428571428571429%; left: 7.142857142857143%"
+          ></div>
+          <div
+            class="piano-key piano-accidental"
+            style="width: 5%; left: 11.42857142857143%"
+          ></div>
+          <div
+            class="piano-key piano-natural"
+            style="width: 6.428571428571429%; left: 14.285714285714286%"
+          ></div>
+          <div
+            class="piano-key piano-natural"
+            style="width: 6.428571428571429%; left: 21.42857142857143%"
+          ></div>
+          <div
+            class="piano-key piano-accidental"
+            style="width: 5%; left: 25.714285714285715%"
+          ></div>
+          <div
+            class="piano-key piano-natural"
+            style="width: 6.428571428571429%; left: 28.571428571428573%"
+          ></div>
+          <div
+            class="piano-key piano-accidental"
+            style="width: 5%; left: 32.857142857142854%"
+          ></div>
+          <div
+            class="piano-key piano-natural"
+            style="width: 6.428571428571429%; left: 35.714285714285715%"
+          ></div>
+          <div
+            class="piano-key piano-accidental"
+            style="width: 5%; left: 40%"
+          ></div>
+          <div
+            class="piano-key piano-natural"
+            style="width: 6.428571428571429%; left: 42.85714285714286%"
+          ></div>
+          <div
+            class="piano-key piano-natural"
+            style="width: 6.428571428571429%; left: 50%"
+          ></div>
+          <div
+            class="piano-key piano-accidental"
+            style="width: 5%; left: 54.285714285714285%"
+          ></div>
+          <div
+            class="piano-key piano-natural"
+            style="width: 6.428571428571429%; left: 57.142857142857146%"
+          ></div>
+          <div
+            class="piano-key piano-accidental"
+            style="width: 5%; left: 61.42857142857143%"
+          ></div>
+          <div
+            class="piano-key piano-natural"
+            style="width: 6.428571428571429%; left: 64.28571428571429%"
+          ></div>
+          <div
+            class="piano-key piano-natural"
+            style="width: 6.428571428571429%; left: 71.42857142857143%"
+          ></div>
+          <div
+            class="piano-key piano-accidental"
+            style="width: 5%; left: 75.71428571428572%"
+          ></div>
+          <div
+            class="piano-key piano-natural"
+            style="width: 6.428571428571429%; left: 78.57142857142857%"
+          ></div>
+          <div
+            class="piano-key piano-accidental"
+            style="width: 5%; left: 82.85714285714286%"
+          ></div>
+          <div
+            class="piano-key piano-natural"
+            style="width: 6.428571428571429%; left: 85.71428571428572%"
+          ></div>
+          <div
+            class="piano-key piano-accidental"
+            style="width: 5%; left: 90%"
+          ></div>
+          <div
+            class="piano-key piano-natural"
+            style="width: 6.428571428571429%; left: 92.85714285714286%"
+          ></div>
+        </div>
+        <div class="ant-spin-nested-loading">
+          <div class="ant-spin-container">
+            <div class="generator-edit-menu-block">
+              <div class="edit-menu-icon">
+                <i class="far fa-heart"></i>
+                <div class="name">Save</div>
+              </div>
+              <div class="edit-menu-icon">
+                <i class="fas fa-download"></i>
+                <div class="name">MIDI</div>
+              </div>
+              <div class="edit-menu-icon">
+                <i class="fas fa-music"></i>
+                <div class="name">MP3</div>
+              </div>
+              <div class="edit-menu-icon">
+                <i class="fas fa-share-alt"></i>
+                <div class="name">Share</div>
+              </div>
+              <div class="edit-menu-icon">
+                <i class="fas fa-print"></i>
+                <div class="name">Print</div>
+              </div>
+            </div>
+            <div class="generator-centered-block">
+              <div class="generator-chord-block-main">
+                <div class="generator-chord-block-div left">
+                  <div class="chord left">F</div>
+                  <div class="degree left">IV</div>
+                  <i class="icon-edit left"></i>
+                </div>
+                <div class="generator-chord-block-div">
+                  <div class="chord">G</div>
+                  <div class="degree">V</div>
+                  <i class="icon-edit left"></i>
+                </div>
+                <div class="generator-chord-block-div">
+                  <div class="chord">C</div>
+                  <div class="degree">I</div>
+                  <i class="icon-edit left"></i>
+                </div>
+                <div class="generator-chord-block-div right">
+                  <div class="chord right">Em7</div>
+                  <div class="degree right">iii7</div>
+                  <i class="icon-edit left"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="generator-centered-block top-48-24 bottom-24-12">
+          <div class="sweet-round-button" onclick="playAudio()">
+            <i class="icon-play icon" id="audio-icon"></i>
+            <div class="name" id="name">Play</div>
+          </div>
+          <div class="sweet-slider">
+            <div class="sweet-slider-title" style="color: rgba(0, 0, 0, 0.65)">
+              BPM: 120
+            </div>
+            <div class="slidecontainer sweet-slider-wrapper">
+              <input type="range" min="70" max="200" value="120" class="slider" id="myRange">
+            </div>
+          </div>
+        </div>
+        <div class="generator-centered-block bottom-24-12">
+          <div
+            style="width: 120px; margin-right: 6px; margin-left: 6px"
+            class="ant-select ant-select-enabled"
+          >
+            <div
+              class="ant-select-selection ant-select-selection--single"
+              role="combobox"
+              aria-autocomplete="list"
+              aria-haspopup="true"
+              aria-controls=""
+              aria-expanded="false"
+              tabindex="0"
+            >
+              <div class="ant-select-selection__rendered">
+                <div
+                  class="ant-select-selection-selected-value"
+                  title="C"
+                  style="display: block; opacity: 1"
+                >
+                  C
+                </div>
+              </div>
+              <span
+                class="ant-select-arrow"
+                style="user-select: none; -webkit-user-select: none"
+                unselectable="on"
+                ><i
+                  aria-label="icon: down"
+                  class="anticon anticon-down ant-select-arrow-icon"
+                  ><svg
+                    viewBox="64 64 896 896"
+                    focusable="false"
+                    class=""
+                    data-icon="down"
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                    ></path></svg></i
+              ></span>
+            </div>
+          </div>
+          <div
+            style="width: 120px; margin-right: 6px; margin-left: 6px"
+            class="ant-select ant-select-enabled"
+          >
+            <div
+              class="ant-select-selection ant-select-selection--single"
+              role="combobox"
+              aria-autocomplete="list"
+              aria-haspopup="true"
+              aria-controls=""
+              aria-expanded="false"
+              tabindex="0"
+            >
+              <div class="ant-select-selection__rendered">
+                <div
+                  class="ant-select-selection-selected-value"
+                  title="Clean"
+                  style="display: block; opacity: 1"
+                >
+                  Clean
+                </div>
+              </div>
+              <span
+                class="ant-select-arrow"
+                style="user-select: none; -webkit-user-select: none"
+                unselectable="on"
+                ><i
+                  aria-label="icon: down"
+                  class="anticon anticon-down ant-select-arrow-icon"
+                  ><svg
+                    viewBox="64 64 896 896"
+                    focusable="false"
+                    class=""
+                    data-icon="down"
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                    ></path></svg></i
+              ></span>
+            </div>
+          </div>
+          <div
+            style="width: 120px; margin-right: 6px; margin-left: 6px"
+            class="ant-select ant-select-enabled"
+          >
+            <div
+              class="ant-select-selection ant-select-selection--single"
+              role="combobox"
+              aria-autocomplete="list"
+              aria-haspopup="true"
+              aria-controls=""
+              aria-expanded="false"
+              tabindex="0"
+            >
+              <div class="ant-select-selection__rendered">
+                <div
+                  class="ant-select-selection-selected-value"
+                  title="-Disable-"
+                  style="display: block; opacity: 1"
+                >
+                  -Disable-
+                </div>
+              </div>
+              <span
+                class="ant-select-arrow"
+                style="user-select: none; -webkit-user-select: none"
+                unselectable="on"
+                ><i
+                  aria-label="icon: down"
+                  class="anticon anticon-down ant-select-arrow-icon"
+                  ><svg
+                    viewBox="64 64 896 896"
+                    focusable="false"
+                    class=""
+                    data-icon="down"
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                    ></path></svg></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="generator-centered-block top-24-12 bottom-96-48" onclick="generateAudio()">
+        <div class="generator-generate-button-container">
+          <div class="generator-generate-button-part left">
+            <i class="icon-shuffle icon center-vertical"></i>
+            <div class="name center-vertical">
+              Generate
+              <div>Major</div>
+            </div>
+          </div>
+          <div class="generator-generate-button-part right">
+            <i class="icon-settings icon center-vertical"></i>
+          </div>
+        </div>
+      </div>
+      <div class="text-block">
+        <div
+          style="
+            box-sizing: border-box;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            max-width: 1140px;
+          "
+        >
+          <div
+            style="
+              margin-left: -15px;
+              margin-right: -15px;
+              display: flex;
+              flex-wrap: wrap;
+              flex-grow: 0;
+              flex-shrink: 0;
+              align-items: normal;
+              justify-content: center;
+            "
+          >
+            <div
+              style="
+                box-sizing: border-box;
+                min-height: 1px;
+                position: relative;
+                padding-left: 15px;
+                padding-right: 15px;
+                width: [object Object];
+                flex-basis: 66.66666666666667%;
+                flex-grow: 0;
+                flex-shrink: 0;
+                max-width: 66.66666666666667%;
+                margin-left: 0%;
+                right: auto;
+                left: auto;
+              "
+            >
+              <h2>Welcome to the best Music Maker Tool!</h2>
+              <p>
+                This website is dedicated specifically for musicians, who are
+                willing to find some catchy and interesting chord progressions.
+                Apart from generating chord progressions, this website can help
+                you improve musical compositions and suggest you some sweet
+                chord sequences to make music.
+              </p>
+              <h2>Instructions</h2>
+              <ol>
+                <li>
+                  Just press the Generate Chord Progression button and you will
+                  get the random chord sequence that is called chord
+                  progression.
+                </li>
+                <li>Enjoy</li>
+              </ol>
+              <h2>Options</h2>
+              <p>
+                -To change the key press the right button and pick between
+                different options. -You can also change Arpeggio and Drum
+                Settings. Furthermore, you can enable/disable randomization for
+                BPM, Arpeggio, Drums and Key if you want to fix currently
+                selected option.
+              </p>
+              <h2>Explanation</h2>
+              <p>
+                There is nothing complicated except Roman Numerals below the
+                chord namings. Actually, they are called Scale Degrees. Scale
+                Degree refers to the position of a particular note on a scale
+                relative to the tonic, the first and main note of the scale from
+                which each octave is assumed to begin. Degrees are useful for
+                indicating the size of intervals and chords, and whether they
+                are major or minor. The other confusing thing is arrangement
+                options. AAAA, ABCD, ABBB, AB are not specific conventions.
+                Those are just namings made up by me. Try them out and listen to
+                how they sound.
+              </p>
+              <p>
+                If you&#x27;re willing to understand more music theory - check
+                out our Theory For Music website.
+              </p>
+              <p>Pro Tip: Bookmark this page right now :)</p>
+              <p>
+                Disclaimer: I strive to make this tool as suitable as possible,
+                so be sure to leave the feedback and share the ideas via email.
+              </p>
+            </div>
+          </div>
+          <span style="display: table; clear: both"></span>
+        </div>
+      </div>
+      <div class="mobile-apps-block">
+        <div class="mobile-apps-title">
+          ChordChord Mobile App Is Finally Available For
+          <span>Android &amp; iOS!</span>
+        </div>
+        <div class="mobile-apps-buttons">
+          <a
+            href=""
+            ><img src="./images/google_play.png" /></a
+          ><a
+            href=""
+            ><img src="./images/app_store.png"
+          /></a>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-columns">
+          <div class="footer-primary-column">
+            <div class="footer-logo">ChordChord</div>
+            <div class="footer-description">
+              Find your chord progression and inspiration for making music.
+            </div>
+          </div>
+          <div class="footer-column">
+            <div class="footer-menu-item"><a href="">Generator</a></div>
+            <div class="footer-menu-item"><a href="">Blog</a></div>
+            <div class="footer-menu-item"><a href="">Jobs</a></div>
+            <div class="footer-menu-item">
+              <a href="">Terms of service</a>
+            </div>
+            <div class="footer-menu-item">
+              <a href="">Privacy policy</a>
+            </div>
+            <div class="footer-menu-item">
+              <a href="">Affiliate</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <div class="footer-menu-label">Follow us</div>
+            <a
+              class="footer-icon"
+              href=""
+              ><i class="fab fa-instagram"></i></a
+            ><a
+              class="footer-icon"
+              href=""
+              ><i class="fab fa-facebook-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          ©<!-- -->2021<!-- -->
+          ChordChord LTD. All rights reserved.
+        </div>
+      </footer>
+    </div>
+    <div class="audio">
+      <audio src="./audio/Virtual_Piano_data_a1.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_a2.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_asharp1.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_asharp2.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_b1.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_b2.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_beat.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_c1.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_c2.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_c3.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_csharp1.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_csharp2.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_d1.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_d2.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_dsharp1.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_dsharp2.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_e1.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_e2.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_f1.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_f2.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_fsharp1.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_fsharp2.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_g1.wav"></audio>
+      <audio src="./audio/Virtual_Piano_data_g2.wav"></audio>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
